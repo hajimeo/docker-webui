@@ -195,7 +195,7 @@ func init() {
 			Client *models.DockerClient `json:"client"`
 			Logs   []stdlogs            `json:"logs"`
 		}
-		logs := []clientlogs{}
+		clilogs := []clientlogs{}
 
 		d := make(chan clientlogs, len(dockers))
 		for _, docker := range dockers {
@@ -211,7 +211,7 @@ func init() {
 				inner := []stdlogs{}
 				for _, container := range containers {
 					go func(container models.DockerContainer) {
-
+						logs.Debug.Printf("Docker container ID: %s", container.ID)
 						stdout, stderr, err := docker.Logs(container.ID, count, 1*time.Second)
 						if err != nil {
 							renderErrorJSON(w, err)
@@ -231,10 +231,10 @@ func init() {
 			}(docker)
 		}
 		for i := 0; i < len(dockers); i++ {
-			logs = append(logs, <-d)
+			clilogs = append(clilogs, <-d)
 		}
 		close(d)
-		util.RenderJSON(w, logs, nil)
+		util.RenderJSON(w, clilogs, nil)
 	}))
 
 	/**
