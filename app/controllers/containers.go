@@ -211,9 +211,9 @@ func init() {
 				inner := []stdlogs{}
 				for _, container := range containers {
 					go func(container models.DockerContainer) {
-						logs.Debug.Printf("Docker container ID: %s", container.ID)
 						stdout, stderr, err := docker.Logs(container.ID, count, 1*time.Second)
 						if err != nil {
+							logs.Debug.Printf("err: %s", err)
 							renderErrorJSON(w, err)
 							return
 						}

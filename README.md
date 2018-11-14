@@ -94,7 +94,7 @@ or as a simple docker container
 or as a go binary
 
 `$ export GOPATH=$HOME/go`  
-`$ go get -v github.com/hajimeo/docker-webui`  
+`$ go get -u -v github.com/hajimeo/docker-webui`  
 `$ nohup $GOPATH/bin/docker-webui &> /tmp/docker-webui.out &`
 
 ### 2. Access to the following URL
