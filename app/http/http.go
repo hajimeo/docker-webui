@@ -14,9 +14,9 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/logs"
-	"github.com/pottava/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/logs"
+	"github.com/hajimeo/docker-webui/app/misc"
 )
 
 var cfg *config.Config

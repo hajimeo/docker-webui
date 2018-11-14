@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/misc"
 )
 
 // DockerContainer represents a container

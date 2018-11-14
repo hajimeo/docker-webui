@@ -6,8 +6,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/misc"
 )
 
 // DockerClient represents a Docker client

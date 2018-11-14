@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/misc"
 )
 
 func TestIndex(t *testing.T) {

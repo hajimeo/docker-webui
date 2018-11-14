@@ -9,12 +9,12 @@ import (
 
 	api "github.com/fsouza/go-dockerclient"
 
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/engine"
-	util "github.com/pottava/docker-webui/app/http"
-	"github.com/pottava/docker-webui/app/logs"
-	"github.com/pottava/docker-webui/app/misc"
-	"github.com/pottava/docker-webui/app/models"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/engine"
+	util "github.com/hajimeo/docker-webui/app/http"
+	"github.com/hajimeo/docker-webui/app/logs"
+	"github.com/hajimeo/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/models"
 )
 
 func init() {

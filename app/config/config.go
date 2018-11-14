@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pottava/docker-webui/app/misc"
+	"github.com/hajimeo/docker-webui/app/misc"
 )
 
 func defaultConfig() Config {
@@ -37,7 +37,7 @@ func defaultConfig() Config {
 		DockerRmTimeout:        5 * time.Minute,
 		DockerCommitTimeout:    30 * time.Second,
 		StaticFileHost:         "",
-		StaticFilePath:         gopath + "/src/github.com/pottava/docker-webui/app",
+		StaticFilePath:         gopath + "/src/github.com/hajimeo/docker-webui/app",
 		PreventSelfStop:        true,
 		HiddenContainers:       []string{},
 	}

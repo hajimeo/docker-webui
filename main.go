@@ -6,11 +6,11 @@ import (
 	"path"
 	"strings"
 
-	"github.com/pottava/docker-webui/app/config"
-	_ "github.com/pottava/docker-webui/app/controllers"
-	misc "github.com/pottava/docker-webui/app/http"
-	"github.com/pottava/docker-webui/app/logs"
-	_ "github.com/pottava/docker-webui/app/models"
+	"github.com/hajimeo/docker-webui/app/config"
+	_ "github.com/hajimeo/docker-webui/app/controllers"
+	misc "github.com/hajimeo/docker-webui/app/http"
+	"github.com/hajimeo/docker-webui/app/logs"
+	_ "github.com/hajimeo/docker-webui/app/models"
 )
 
 var (

@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/pottava/docker-webui/app/config"
-	"github.com/pottava/docker-webui/app/engine"
-	util "github.com/pottava/docker-webui/app/http"
-	"github.com/pottava/docker-webui/app/models"
+	"github.com/hajimeo/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/engine"
+	util "github.com/hajimeo/docker-webui/app/http"
+	"github.com/hajimeo/docker-webui/app/models"
 )
 
 func init() {

@@ -7,7 +7,7 @@ import (
 	"math"
 	"os"
 
-	"github.com/pottava/docker-webui/app/config"
+	"github.com/hajimeo/docker-webui/app/config"
 )
 
 var (

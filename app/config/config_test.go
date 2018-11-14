@@ -50,7 +50,7 @@ func TestMerge(t *testing.T) {
 		DockerRmTimeout:        5 * time.Minute,
 		DockerCommitTimeout:    30 * time.Second,
 		StaticFileHost:         "",
-		StaticFilePath:         gopath + "/src/github.com/pottava/docker-webui/app",
+		StaticFilePath:         gopath + "/src/github.com/hajimeo/docker-webui/app",
 		PreventSelfStop:        true,
 		HiddenContainers:       []string{},
 	}
