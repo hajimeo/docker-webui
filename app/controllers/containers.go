@@ -213,6 +213,7 @@ func init() {
 					go func(container models.DockerContainer) {
 						stdout, stderr, err := docker.Logs(container.ID, count, 1*time.Second)
 						if err != nil {
+							// TODO: it seems logging page is not working even after changing Follow to true
 							logs.Debug.Printf("err: %s", err)
 							renderErrorJSON(w, err)
 							return
