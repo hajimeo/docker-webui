@@ -260,14 +260,11 @@ func (c *Client) LogStream(opts LogsOptions) (err error) {
 			Container:    opts.ID,
 			OutputStream: outWriter,
 			ErrorStream:  errWriter,
-			// TODO
-			// There's no way to stop this goroutine if this flag is true for now.
-			// Have to turn to true if the issue (https://github.com/fsouza/go-Client/issues/298) is closed.
-			Follow:     false,
-			Stdout:     true,
-			Stderr:     true,
-			Timestamps: true,
-			Tail:       tail,
+			Follow:       true,
+			Stdout:       true,
+			Stderr:       true,
+			Timestamps:   true,
+			Tail:         tail,
 		})
 		outWriter.Close()
 		errWriter.Close()
